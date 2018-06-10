@@ -1,0 +1,254 @@
+.so .spacer {
+  height: 50px;
+}
+
+.so header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.so nav {
+  display: block;
+  height: 51px;
+  width: 100%;
+  background-color: #fafafb;
+  border-top: 3px solid #fa7b1d;
+  border-bottom: 1px solid #dcdddd;
+  box-shadow: 0 2px 2px rgba(0,0,0,.01);
+}
+
+.so nav .wrapper {
+  width: 100%;
+  max-width: 1060px;
+  min-width: 566px;
+  margin: 0 auto;
+}
+
+/* nav left */
+
+.so .nav-left {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.so .nav-left li {
+  display: inline-block;
+}
+
+.so .nav-left a {
+  display: inline-block;
+  height: 47px;
+  vertical-align: top;
+  color: #666;
+  text-decoration: none;
+  font-size: .75em;
+  padding: 17px 8px 0;
+}
+
+.so .nav-left a:hover {
+  background-color: #f3f3f3;
+  color: #444;
+}
+
+.so .nav-left .logo a {
+  padding: 0;
+}
+
+.so .nav-left .logo img {
+  width: 45px;
+  padding-top: 4px;
+  padding-left: 4px;
+  margin-right: 4px;
+}
+
+/* nav right */
+
+.so .nav-right {
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+}
+
+.so .nav-right li {
+  display: inline-block;
+}
+
+.so .nav-right a,
+.so .so-search-nav-button {
+  display: inline-block;
+  height: 47px;
+  vertical-align: top;
+  color: #888;
+  text-decoration: none;
+  padding: 14px 12px 0;
+  font-size: 1.15em;
+}
+
+.so .so-search-nav-button {
+  padding-top: 13px;
+}
+
+.so .nav-right a:hover,
+.so .so-search-nav-button:hover {
+  background-color: #f3f3f3;
+}
+
+.so .nav-right .user a {
+  padding: 0 6px;
+}
+
+.so .nav-right .user img {
+  height: 24px;
+  width: 24px;
+  border-radius: 2px;
+  margin-top: 12px;
+  vertical-align: top;
+}
+
+.so .nav-right .user a span:nth-child(2) {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 16px;
+  margin-left: 8px;
+  margin-right: 5px;
+  color: black;
+  font-weight: bold;
+  font-size: .8em;
+  display: none;
+}
+
+.so .nav-right .user a span:nth-child(3) {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 13px;
+  margin-right: 3px;
+  color: #d5a585;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: none;
+}
+
+.so .nav-right .user a span:nth-child(4) {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 16px;
+  color: #d5a585;
+  font-weight: bold;
+  font-size: .8em;
+  display: none;
+}
+
+/* form  */
+
+.so form {
+  display: none;
+  vertical-align: top;
+  padding: 6px 22px 6px 10px;
+  position: relative;
+}
+
+.so form input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 36px;
+  vertical-align: top;
+  padding: 0 15px;
+  color: #444;
+}
+
+.so form input:focus {
+  outline: none;
+}
+
+.so form button {
+  height: 36px;
+  vertical-align: top;
+  border-radius: 3px;
+  border: 1px solid #07c;
+  font-size: 1.2em;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0 12px;
+  background-color: #00a0ff;
+  color: white;
+  position: absolute;
+  right: 22px;
+  display: none;
+}
+
+.so .so-search-form-focus-dropdown {
+  display: block;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #dcdddd;
+  padding-right: 10px;
+}
+
+.so .so-search-form-focus-dropdown button {
+  right: 10px;
+}
+
+.so .so-search-form-focus input {
+  border-color: #07c;
+  box-shadow: 0 0 5px #e1edf4;
+  padding-right: 50px;
+}
+
+.so .so-search-nav-button-focus {
+  background-color: #f3f3f3;
+}
+
+
+/* media queries *************************************************/
+
+@media (min-width: 792px) {
+  .so .nav-right li:first-child {
+    display: none;
+  }
+
+  .so form {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 980px) {
+  .so .nav-right .user a span:nth-child(2),
+  .so .nav-right .user a span:nth-child(3),
+  .so .nav-right .user a span:nth-child(4) {
+    display: inline-block;
+  }
+
+  .so .nav-left a {
+    font-size: .9em;
+  }
+}
+
+@media (min-width: 1080px) {
+  .so .nav-left a {
+    padding: 17px 12px 0;
+  }
+
+  .so form {
+    padding-right: 50px;
+  }
+
+  .so form button {
+    right: 50px;
+  }
+}
+
+/* remove 'x' from search input */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }

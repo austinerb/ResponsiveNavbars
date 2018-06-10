@@ -1,0 +1,312 @@
+.reddit {
+  font-family: sans-serif;
+}
+
+.reddit nav {
+  height: 49px;
+  width: 100%;
+  min-width: 434px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.reddit .spacer {
+  height: 50px;
+}
+
+/* menu button *******/
+
+.reddit .menu-btn {
+  width: 49px;
+  display: inline-block;
+  vertical-align: top;
+  height: 49px;
+  border-right: 1px solid #eee;
+  padding: 14px 0 0 15px;
+}
+
+.reddit .menu-btn .exit-menu-btn {
+  display: none;
+}
+
+.reddit .menu-btn i {
+  font-size: 1.3em;
+  color: #999;
+}
+
+.reddit .menu-btn i:nth-child(2) {
+  margin-left: 1px;
+  display: none;
+}
+
+/* logo **********/
+
+.reddit .logo {
+  width: 100px;
+  margin-left: 11px;
+  margin-top: 8px;
+}
+
+/* nav right ********/
+
+.reddit .nav-right {
+  float: right;
+}
+
+/* search form ********/
+
+.reddit .search-form {
+  display: none;
+  border-right: 1px solid #eee;
+  margin-top: 15px;
+  margin-right: 10px;
+  padding-right: 20px;
+}
+
+.reddit .search-form input {
+  border: 0;
+  width: 230px;
+}
+
+/* user icons ************/
+
+.reddit .user-icons {
+  display: none;
+  padding-top: 8px;
+  vertical-align: top;
+}
+
+.reddit .user-icons a {
+  display: inline-block;
+  color: #333;
+  padding: 8px;
+}
+
+.reddit .user-icons a:hover {
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+/* user button ***************/
+
+.reddit .user {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.reddit .user-btn {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 8px;
+  padding-left: 15px;
+  margin-right: 31px;
+}
+
+.reddit .user-btn {
+  color: black;
+  text-decoration: none;
+}
+
+.reddit .user-btn img {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.reddit .user-btn .user-info {
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+  font-size: .8em;
+}
+
+.reddit .user-btn .user-info .user-name {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.reddit .user-btn .user-info i {
+  font-size: .8em;
+  color: #ff3b00;
+}
+
+.reddit .user-btn .user-info .karma {
+  font-size: .95em;
+  color: #999;
+}
+
+.reddit .user-btn .fa-caret-down {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+/* user dropdown ********************/
+
+.reddit .user-dropdown {
+  display: none;
+  position: absolute;
+  top: 48px;
+  background-color: white;
+  border-radius: 3px;
+  width: 224px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 3px 3px rgba(0,0,0,.1);
+}
+
+.reddit .user-dropdown li a {
+  display: block;
+  padding: 11px 9px;
+  text-decoration: none;
+}
+
+.reddit .user-dropdown li a:hover {
+  background-color: rgb(0, 121, 211);
+}
+
+.reddit .user-dropdown li a span {
+  font-size: .9em;
+  color: #333;
+}
+
+.reddit .user-dropdown li a:hover span,
+.reddit .user-dropdown li a:hover i {
+  color: white;
+}
+
+.reddit .user-dropdown li a i {
+  font-size: 1.1em;
+  color: #888;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  margin-right: 6px;
+}
+
+.reddit .user-dropdown li:nth-child(2),
+.reddit .user-dropdown li:nth-child(3),
+.reddit .user-dropdown li:nth-child(6) {
+  border-bottom: 1px solid #eee;
+}
+
+/* menu *************************************************/
+
+.reddit-menu {
+  display: none;
+  overflow-y: scroll;
+  height: calc(100vh - 50px);
+  position: fixed;
+  top: 49px;
+  left: 0;
+  background-color: white;
+  width: 284px;
+}
+
+.reddit-menu h2 {
+  font-size: .6em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* menu feeds ********/
+
+.reddit-menu .feeds-header {
+  margin-top: 24px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+
+.reddit-menu .feeds {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.reddit-menu .feeds li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 9px 16px;
+  width: 100%;
+}
+
+.reddit-menu .feeds li a:hover {
+  background-color: #eee;
+}
+
+.reddit-menu .feeds li a i {
+  color: rgb(0, 121, 211);
+  width: 26px;
+}
+
+.reddit-menu .feeds li a span {
+  font-size: .9em;
+  color: #333;
+}
+
+/* menu search ********/
+
+.reddit-menu form {
+  margin: 0 16px 9px;
+}
+
+.reddit-menu form input {
+  width: 100%;
+  height: 30px;
+  background-color: #fafafa;
+  border: 1px solid #eee;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+
+.reddit-menu form input:hover {
+  background-color: white;
+}
+
+.redit-menu form input:focus {
+  background-color: white;
+}
+
+/* menu favorites *********/
+
+.reddit-menu .favorites-header {
+  padding: 5px 16px;
+}
+
+.reddit-menu .favorites-header:hover {
+  background-color: #eee;
+}
+
+.reddit-menu .favorites-header h2 {
+  display: inline-block;
+}
+
+.reddit-menu .favorites-header i {
+  float: right;
+  color: #888;
+}
+
+.reddit-menu .favorites-header i:nth-child(2) {
+  display: none;
+}
+
+/* media queries *************************************/
+
+@media (min-width: 544px) {
+  .reddit .user-icons {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 840px) {
+  .reddit .search-form {
+    display: inline-block;
+  }
+}

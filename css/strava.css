@@ -1,0 +1,431 @@
+.strava a {
+  color: #979797;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.strava .spacer {
+  height: 56px;
+}
+
+/* nav  ****************************************************/
+
+.strava nav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.strava .wrapper {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 752px;
+  margin: 0 auto;
+  height: 56px;
+}
+
+.strava .nav-left {
+  float: left;
+}
+
+.strava .nav-right {
+  float: right;
+}
+
+.strava .nav-left > div,
+.strava .nav-right > div {
+  display: inline-block;
+  height: 56px;
+  vertical-align: top;
+}
+
+/* nav left ***************************/
+
+.strava .logo {
+  text-transform: uppercase;
+  font-size: 2.1em;
+  padding-top: 7px;
+  margin-right: 20px;
+}
+
+.strava .logo a {
+  font-family: "Changa One", sans-serif;
+  color: #ff4300;
+}
+
+.strava .search {
+  font-size: 1.4em;
+  padding-top: 13px;
+  margin-right: 7px;
+}
+
+.strava .search a:hover {
+  color: #5f6065;
+}
+
+.strava .selection,
+.strava .challenges {
+  padding: 20px 10px 0 12px;
+  font-size: .85em;
+}
+
+.strava .selection a:hover,
+.strava .challenges a:hover {
+  color: #ff4300;
+}
+
+.strava .selection-selected {
+  font-weight: bold;
+  border-bottom: 2px solid #ff4300;
+}
+
+.strava .selection-selected a {
+  color: #5f6065;
+}
+
+.strava .selection i {
+  margin-left: 8px;
+}
+
+/* nav right ***************************/
+
+.strava .upload {
+  padding-top: 13px;
+}
+
+.strava .upload a {
+  color: #ff4300;
+  font-size: 1.5em;
+}
+
+.strava .user {
+  margin-right: 21px;
+}
+
+.strava .user a:hover {
+  color: #ff4300;
+}
+
+.strava .user i {
+  vertical-align: top;
+  padding-top: 20px;
+}
+
+.strava .user .user-img {
+  padding-top: 12px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1px;
+}
+
+.strava .user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.strava .notifications {
+  font-size: 1.3em;
+  padding-top: 15px;
+  margin-right: 24px;
+}
+
+.strava .notifications a:hover {
+  color: #5f6065;
+}
+
+.strava .button {
+  padding-top: 22px;
+  margin-right: 37px;
+  font-size: .75em;
+}
+
+.strava .button a {
+  background-color: #ff4300;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+
+.strava .button a:hover {
+  background-color: #c43300;
+}
+
+.strava .nav-content .menu-button {
+  font-size: 1.8em;
+  padding-top: 11px;
+}
+
+.strava .menu-button a {
+  color: #5f6065;
+}
+
+.strava .nav-content .exit-button {
+  font-size: 1.8em;
+  padding-top: 11px;
+}
+
+.strava .exit-button a {
+  color: #5f6065;
+}
+
+.strava .exit-button i {
+  display: none;
+}
+
+.strava .nav-left .search,
+.strava .nav-left .selection,
+.strava .nav-left .challenges,
+.strava .nav-right .button,
+.strava .nav-right .notifications,
+.strava .nav-right .user,
+.strava .nav-right .upload {
+  display: none;
+}
+
+/* menu ************************************************/
+
+.strava nav .strava-menu-container {
+  height: calc(100vh - 56px);
+  overflow-y: scroll;
+  border-top: 1px solid #e7e7e7;
+
+  display: none;
+}
+
+.strava nav .strava-menu {
+  width: 100%;
+  max-width: 770px;
+  margin: 0 auto;
+  font-size: .85em;
+}
+
+.strava nav .strava-menu a {
+  color: #666666;
+}
+
+.strava .menu-search {
+  padding: 8px 13px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.strava .menu-search select {
+  width: 140px;
+  height: 42px;
+  display: inline-block;
+  border-radius: 2px;
+  border-color: #cdcdcd;
+  color: #303030;
+  margin-right: 5px;
+  padding-left: 10px;
+}
+
+.strava .search-form {
+  display: inline-block;
+  width: calc(100% - 145px);
+}
+
+.strava .search-form input {
+  display: inline-block;
+  height: 42px;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #cdcdcd;
+  padding: 0 13px;
+}
+
+.strava .strava-menu .dropdowns {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.strava .strava-menu .dropdowns li {
+  padding: 18px 13px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.strava .strava-menu .dropdowns li i {
+  margin-left: 6px;
+}
+
+.strava .strava-menu .dropdowns .dropdowns-selected {
+  border-left: 2px solid #ff4300;
+}
+
+.strava .strava-menu .dropdowns .dropdowns-selected a {
+  color: #323232;
+  font-weight: bold;
+}
+
+.strava .strava-menu .go-premium {
+  border-top: 2px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: #f5f6fa;
+  height: 76px;
+  text-align: center;
+  padding-top: 26px;
+}
+
+.strava .strava-menu .go-premium a {
+  background-color: #ff4300;
+  color: white;
+  padding: 9px 10px;
+  border-radius: 2px;
+  font-size: .9em;
+}
+
+.strava .user-section {
+  padding: 0 16px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.strava .user-header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
+.strava .user-header a {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.strava .user-header a:hover {
+  color: #ff4300;
+}
+
+.strava .user-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 13px;
+  border-top: 1px solid #e7e7e7;
+  margin-bottom: 10px;
+}
+
+.strava .user-section ul li a {
+  display: inline-block;
+  padding: 16px 0 16px 44px;
+  width: 100%;
+}
+
+.strava .activity-section li a:hover {
+  background-color: #e7e7e7;
+}
+
+.strava .activity-section {
+  list-style: none;
+  padding: 0 1em;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e7e7e7;
+  padding-bottom: 10px;
+}
+
+.strava .activity-section li a {
+  display: inline-block;
+  padding: 16px 0 16px 44px;
+  padding: 16px 0 16px 0px;
+  width: 100%;
+}
+
+.strava .user-section ul li a:hover {
+  background-color: #e7e7e7;
+}
+
+.strava .activity-section li a i {
+  font-size: 1.5em;
+  width: 20px;
+  color: #ddd;
+  margin-right: 20px;
+  margin-left: 5px;
+}
+
+.strava .activity-section li a:hover i {
+  color: #666;
+}
+
+.strava .strava-menu footer {
+  padding: 0 1em 36px;
+}
+
+.strava .strava-menu footer a {
+  color: #999;
+}
+
+.strava .strava-menu footer .support {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 36px;
+  font-size: .9em;
+  margin-bottom: 20px;
+}
+
+.strava .strava-menu footer .support li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.strava .strava-menu footer .language {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: .9em;
+  margin-bottom: 20px;
+}
+
+.strava .strava-menu footer .language li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.strava .strava-menu footer small {
+  color: #999;
+  font-size: .9em;
+  font-family: sans-serif;
+}
+
+/* media queries  **************************************/
+
+@media (min-width: 992px) {
+  .strava .wrapper {
+    max-width: 1248px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .strava .logo {
+    font-size: 1.7em;
+    padding-top: 11px;
+  }
+
+  .strava .nav-content .menu-button {
+    display: none;
+  }
+
+  .strava .nav-left .search,
+  .strava .nav-left .selection,
+  .strava .nav-left .challenges,
+  .strava .nav-right .button,
+  .strava .nav-right .notifications,
+  .strava .nav-right .user,
+  .strava .nav-right .upload {
+    display: inline-block;
+  }
+}

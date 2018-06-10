@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 0 2em;
+  height: 120vh;
+}
+
+main h1 {
+  font-family: sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
+
+main ul li {
+  padding: 15px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  background-color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.navbar-selected {
+  box-shadow: 0 5px 5px rgba(0,0,0,.3);
+}
+
+.uber,
+.strava,
+.so,
+.meetup,
+.reddit {
+  display: none;
+}
+
+.show {
+  display: block;
+}

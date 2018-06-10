@@ -1,0 +1,283 @@
+.uber {
+  color: #1a1a1a;
+  font-family: "Raleway", sans-serif;
+}
+
+.uber a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.uber .wrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.uber .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.uber .spacer {
+  height: 60px;
+  width: 100%;
+}
+
+.uber .offset-fix {
+  margin-top: 9px;
+}
+
+.uber .fullheight {
+  height: 100vh;
+}
+
+/* nav *******************************/
+
+.uber nav {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.uber nav .nav-left,
+.uber nav .nav-right {
+  display: inline-block;
+}
+
+.uber nav .nav-left {
+  float: left;
+  height: 60px;
+}
+
+.uber nav .nav-right {
+  float: right;
+  padding-top: 9px;
+  height: 60px;
+}
+
+.uber nav .nav-left a {
+  margin-right: 1.2em;
+}
+
+.uber nav .nav-left a:nth-of-type(1n + 1) {
+  display: none;
+  font-size: 1.1em;
+}
+
+.uber nav #logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+.uber nav .nav-left-nav {
+  display: inline-block;
+}
+
+.uber nav .help-signin {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  display: none;
+}
+
+.uber nav .help-signin a {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .9em;
+  margin-right: 10px;
+}
+
+.uber nav .fa-times,
+.uber nav .fa-bars {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.4em;
+}
+
+.uber nav .fa-times {
+  display: none;
+}
+
+.uber nav #become-a-driver {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 15px 12px;
+  text-transform: uppercase;
+  font-size: .6em;
+  font-weight: bold;
+  margin-right: 17px;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: .5px;
+}
+
+.uber nav .nav-right .fa-map-marker {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 1.3em;
+  margin-right: 15px;
+}
+
+/* menu ********************************/
+
+.uber nav .menu {
+  background-color: white;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  display: none;
+  height: 100vh;
+}
+
+.uber nav .menu hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid #c6c6c6;
+}
+
+.uber nav .menu .menu-section .header {
+  margin-top: 30px;
+  margin-bottom: 37px;
+}
+
+.uber nav .menu .menu-section .header p {
+  margin: 0;
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.uber nav .menu .menu-section .header i {
+  float: right;
+  font-size: 1.2em;
+  color: #c6c6c6;
+}
+
+.uber nav .menu .menu-section .header .fa-caret-up {
+  display: none;
+}
+
+.uber nav .menu .menu-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.uber nav .menu .menu-section ul li {
+  margin-bottom: 30px;
+}
+
+.uber nav .menu .search,
+.uber nav .menu .location,
+.uber nav .menu .language {
+  padding: 15px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.uber nav .menu .search i,
+.uber nav .menu .language i,
+.uber nav .menu .location i {
+  margin-right: 10px;
+}
+
+.uber nav .menu .social {
+  padding: 15px 0;
+}
+
+.uber nav .menu .social span,
+.uber nav .menu .social i {
+  margin-right: 20px;
+}
+
+/* media queries ******************************/
+@media (min-width: 578px) {
+  .uber .wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* nav ********/
+  .uber nav .nav-left a:nth-child(2),
+  .uber nav .nav-left a:nth-child(3) {
+    display: inline-block;
+  }
+
+  .uber nav .nav-right {
+    padding-top: 9px;
+  }
+
+  .uber nav .help-signin {
+    display: inline-block;
+  }
+
+  .uber nav #become-a-driver {
+    font-size: .8em;
+    font-weight: 600;
+    padding: 14px 15px 14px;
+  }
+
+  /* menu ***********/
+
+  .uber nav .menu .menu-section {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+  }
+
+  .uber nav .menu .menu-section .header {
+    margin-bottom: 20px;
+  }
+
+  .uber nav .menu .menu-section i {
+    display: none;
+  }
+
+  .uber nav .menu .menu-section:nth-child(4) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .uber nav .menu .menu-section ul {
+    display: block;
+  }
+
+  .uber nav .menu .menu-section ul li {
+    display: inline-block;
+    width: 50%;
+    font-size: .9em;
+    margin-bottom: 10px;
+  }
+
+  .uber nav .menu .menu-section:nth-child(4) ul li {
+    width: 25%;
+  }
+
+  .uber nav .menu hr:nth-child(9) {
+    display: none;
+  }
+
+  .uber nav .menu .location,
+  .uber nav .menu .language {
+    width: 50%;
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* nav ********/
+  .uber nav .nav-left a:nth-child(4),
+  .uber nav .nav-left a:nth-child(5) {
+    display: inline-block;
+  }
+}
