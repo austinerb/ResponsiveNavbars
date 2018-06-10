@@ -349,7 +349,7 @@
 /* create a community button *****/
 
 .reddit-menu .create-a-new-community {
-  margin: 16px 16px 0;
+  margin: 16px;
   border-top: 1px solid #eee;
   padding-top: 10px;
 }
