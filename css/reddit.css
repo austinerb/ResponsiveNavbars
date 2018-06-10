@@ -233,7 +233,7 @@
 .reddit-menu .feeds li a {
   text-decoration: none;
   display: inline-block;
-  padding: 9px 16px;
+  padding: 8px 16px;
   width: 100%;
 }
 
@@ -243,7 +243,8 @@
 
 .reddit-menu .feeds li a i {
   color: rgb(0, 121, 211);
-  width: 26px;
+  width: 28px;
+  font-size: 1.2em;
 }
 
 .reddit-menu .feeds li a span {
@@ -254,7 +255,7 @@
 /* menu search ********/
 
 .reddit-menu form {
-  margin: 0 16px 9px;
+  margin: 0 16px;
 }
 
 .reddit-menu form input {
@@ -274,27 +275,101 @@
   background-color: white;
 }
 
-/* menu favorites *********/
+/* submenu *********/
 
-.reddit-menu .favorites-header {
-  padding: 5px 16px;
-}
-
-.reddit-menu .favorites-header:hover {
-  background-color: #eee;
-}
-
-.reddit-menu .favorites-header h2 {
-  display: inline-block;
-}
-
-.reddit-menu .favorites-header i {
-  float: right;
+.reddit-menu .submenu .fav i:nth-child(3) {
   color: #888;
 }
 
-.reddit-menu .favorites-header i:nth-child(2) {
+.reddit-menu:hover .submenu .fav i:nth-child(3) {
+  color: rgb(0, 121, 211);
+}
+
+.reddit-menu .submenu-header {
+  padding: 5px 16px;
+  margin-top: 9px;
+}
+
+.reddit-menu .subscriptions-header {
+  padding-left: 15px;
+}
+
+.reddit-menu .submenu-header:hover {
+  background-color: #eee;
+}
+
+.reddit-menu .submenu-header h2 {
+  display: inline-block;
+}
+
+.reddit-menu .submenu-header i {
+  float: right;
+  color: #888;
+  margin-right: 2px;
+}
+
+.reddit-menu .submenu-header i:nth-child(2) {
   display: none;
+}
+
+.reddit-menu .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reddit-menu .submenu li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.reddit-menu .submenu li a:hover {
+  background-color: #eee;
+}
+
+.reddit-menu .submenu li a i:first-child {
+  font-size: 1.3em;
+  vertical-align: middle;
+  width: 28px;
+  color: rgb(0, 121, 211);
+}
+
+.reddit-menu .submenu li a span {
+  font-size: .9em;
+  color: #333;
+}
+
+.reddit-menu .submenu li a i:nth-child(3) {
+  float: right;
+  color: #ccc;
+}
+
+/* create a community button *****/
+
+.reddit-menu .create-a-new-community {
+  margin: 16px 16px 0;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.reddit-menu .create-a-new-community a {
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(0, 121, 211);
+  border-radius: 4px;
+  padding: 5px 18px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.reddit-menu .create-a-new-community a span {
+  font-size: .65em;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-left: 7px;
 }
 
 /* media queries *************************************/

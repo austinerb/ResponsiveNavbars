@@ -103,7 +103,6 @@
 .meetup .menu .meetups li:hover a,
 .meetup .menu .user-settings li:hover a {
   color: white;
-  border-bottom: 0;
 }
 
 .meetup .menu .user-settings li a {
